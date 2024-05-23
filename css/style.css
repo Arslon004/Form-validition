@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: #141a34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container form{
+  width: 90%;
+  max-width: 500px;
+  padding: 50px 30px 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+}
+.fa-paper-plane{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  font-size: 26px;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-group{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+}
+.input-group label{
+  flex-basis: 28%;
+}
+
+.input-group input,.input-group textarea{
+  flex-basis: 68%;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 10px 0;
+  border-block-start: 1px solid #999;
+  color: #333;
+  font-size: 16px;
+}
+::placeholder{
+  font-size: 14px;
+}
+form button{
+  background-color: #141a34;
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 10px 40px;
+  outline: none;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto 10px;
+}
+
+.input-group span{
+  position: absolute;
+  bottom: 12px;
+  right: 17px;
+  font-size: 14px;
+  color: red;
+}
+
+#submit-error{
+  color: red;
+}
